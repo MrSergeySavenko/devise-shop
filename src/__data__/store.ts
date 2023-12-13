@@ -1,8 +1,8 @@
 import { combineReducers, configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 
-import { hotelData } from './reduser';
+import { shopData } from './reduser';
 
-const rootReducer = combineReducers({ hotelData });
+const rootReducer = combineReducers({ shopData });
 
 export const setupStore = () => {
     return configureStore({

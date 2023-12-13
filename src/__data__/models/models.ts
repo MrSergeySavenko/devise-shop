@@ -1,16 +1,27 @@
-export interface IData {
-    type: string;
-    title: string;
+export interface IDataInfo {
+    id: string;
     name: string;
-    date: string;
-    colors: Array<string>;
-    coment: string;
     cost: number;
-    url: string;
+    imgUrl: string;
+    date: string;
+}
+
+export interface IDataEelement {
+    title: string;
+    info: Array<IDataInfo>;
+}
+
+export interface IData {
+    notebook: IDataEelement;
+    phone: IDataEelement;
+    notepad: IDataEelement;
+    headphone: IDataEelement;
 }
 
 export interface IDataDetails {}
 
 export interface IDataState {
-    data: Array<Array<IData>> | null;
+    data: IData | null;
+    isLoading: boolean;
+    isError: boolean;
 }

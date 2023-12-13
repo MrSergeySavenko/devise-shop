@@ -1,4 +1,16 @@
-.navBar {
+.navBarWrapper {
     padding: 16px 0;
     background-color: #f3f4f6;
+    border-radius: 16px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

@@ -1,4 +1,4 @@
-import hotelData from './shopData';
+import shopData from './shopData';
 import { dataSlice } from './shopData';
 
-export { hotelData, dataSlice };
+export { shopData, dataSlice };
